@@ -62,6 +62,12 @@ MonoBehaviour:
     m_Value:
       serializedVersion: 2
       m_Bits: 4294967295
+  occluderMotionRejection:
+    m_OverrideState: 0
+    m_Value: 1
+  receiverMotionRejection:
+    m_OverrideState: 0
+    m_Value: 1
   m_StepCount:
     m_OverrideState: 0
     m_Value: 6
@@ -104,22 +110,22 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 25
+    m_Value: 196.2
   directionalTransmissionMultiplier:
     m_OverrideState: 0
     m_Value: 1
   cascadeShadowSplitCount:
-    m_OverrideState: 1
-    m_Value: 2
+    m_OverrideState: 0
+    m_Value: 4
   cascadeShadowSplit0:
     m_OverrideState: 0
-    m_Value: 0.05
+    m_Value: 0.206
   cascadeShadowSplit1:
     m_OverrideState: 0
-    m_Value: 0.15
+    m_Value: 0.544
   cascadeShadowSplit2:
     m_OverrideState: 0
-    m_Value: 0.3
+    m_Value: 0.745
   cascadeShadowBorder0:
     m_OverrideState: 0
     m_Value: 0
@@ -153,7 +159,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.035
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -193,7 +199,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   toeStrength:
     m_OverrideState: 0
     m_Value: 0
