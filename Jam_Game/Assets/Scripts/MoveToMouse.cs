@@ -22,9 +22,12 @@ public class MoveToMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)){
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameManager.Instance.mixerAudio.PlayOneShot(GameManager.Instance.UIAudio[0]);
            Ray cameraRay = mainCam.ScreenPointToRay(Input.mousePosition);
-           if (Physics.Raycast(cameraRay,out RaycastHit hit,layersToRay)){
+           if (Physics.Raycast(cameraRay,out RaycastHit hit,layersToRay))
+           {
                 objectHit = hit.collider.gameObject;
                 if(objectHit.TryGetComponent(out Interactable interactableObjectHit) == true)
                 {
@@ -39,7 +42,13 @@ public class MoveToMouse : MonoBehaviour
                 {
                     print("Non posso andarci!");
                 }
-            }
+           }
+           else
+           {
+                print("Non posso andarci!");
+
+           }
+
            target.z = transform.position.z;
            target.y = transform.position.y;
         }
