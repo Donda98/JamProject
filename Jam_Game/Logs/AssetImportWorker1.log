@@ -512,3 +512,31 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 825.098547 seconds.
+  path: Assets/Models/Public.fbx
+  artifactKey: Guid(3278f9c61b200444ba494e6a24894c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Public.fbx using Guid(3278f9c61b200444ba494e6a24894c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7068be629d2d8a09c8e8d3ec257add39') in 0.795511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Sipario_Dx.fbx
+  artifactKey: Guid(a9e456b188d78284ab492ceb648cd1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Sipario_Dx.fbx using Guid(a9e456b188d78284ab492ceb648cd1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '418eeb67493f7f8aeaa46e652d73a107') in 0.029944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 166.932881 seconds.
+  path: Assets/Materials/Basic_Floor.mat
+  artifactKey: Guid(5201fbb075b78eb4293e39e25ac4042d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Basic_Floor.mat using Guid(5201fbb075b78eb4293e39e25ac4042d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb1075c208a8e330a7b3292612dca794') in 0.463082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Materials/Basic_Walls.mat
+  artifactKey: Guid(5aaab63d0d0dca74babab7960f2bb969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Basic_Walls.mat using Guid(5aaab63d0d0dca74babab7960f2bb969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac92a4480486cc2722f4d8a7691b5b32') in 0.016682 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
