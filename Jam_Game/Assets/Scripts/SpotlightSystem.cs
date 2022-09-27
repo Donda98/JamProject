@@ -7,6 +7,7 @@ public class SpotlightSystem : MonoBehaviour
 {
     [SerializeField] GameObject objectToFollow;
     [SerializeField] Light spotlight;
+    [SerializeField] float followSpeed;
     // Start is called before the first frame update
 
     private void Awake()
@@ -22,21 +23,40 @@ public class SpotlightSystem : MonoBehaviour
     void Update()
     {
         FollowObject();
+        if (Input.GetKeyDown("f"))
+        {
+            Switch();
+        }
+        if (Input.GetKeyDown("m"))
+        {
+            ModifyLightIntensity(500);       
+        }
+        if (Input.GetKeyDown("l"))
+        {
+            ModifyLightIntensity(-500);
+        }
     }
 
     public void FollowObject()
     {
-        this.gameObject.transform.LookAt(objectToFollow.transform);
+        Vector3 direction = objectToFollow.transform.position - transform.position;
+        Quaternion toRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, followSpeed * Time.deltaTime);
     }
 
-    public void TurnOff()
+    public void Switch()
     {
-        
+        spotlight.enabled = !spotlight.enabled;
     }
 
-    public void TurnOn()
+    public void ModifyLightIntensity(int intensityIncrease)
     {
+        spotlight.intensity += intensityIncrease;
+    }
 
+    public void SetLightColor(Color newColor)
+    {
+        spotlight.color = newColor;
     }
 
 
